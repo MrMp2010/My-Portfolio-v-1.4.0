@@ -1,0 +1,123 @@
+/* استایل دایره‌ها */
+/.circle-wrapper {
+  position: relative;
+  min-height: 100vh;
+  /*background: #764ba2; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 0;
+}
+
+/* دایره‌ها */
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.circle:hover {
+  transform: scale(1.15);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* رنگ‌های دایره‌ها */
+.circle-1 {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+}
+
+.circle-2 {
+  background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%);
+}
+
+.circle-3 {
+  background: linear-gradient(135deg, #45b7d1 0%, #96c93d 100%);
+}
+
+.circle-1:hover {
+  background: linear-gradient(135deg, #ff5252 0%, #d32f2f 100%);
+}
+
+.circle-2:hover {
+  background: linear-gradient(135deg, #26a69a 0%, #00695c 100%);
+}
+
+.circle-3:hover {
+  background: linear-gradient(135deg, #42a5f5 0%, #1e88e5 100%);
+}
+
+/* صفحات */
+.page-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  z-index: 1000;
+}
+
+/* دکمه بازگشت */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 12px 24px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  background: #34495e;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .circle-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .circle {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+
+  .circle-container {
+    gap: 20px;
+  }
+}

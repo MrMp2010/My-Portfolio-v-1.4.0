@@ -1,0 +1,254 @@
+.contact-page {
+  flex: 1;
+  padding: 20px 0;
+  min-height: calc(100vh - 140px);
+}
+
+.dark-mode .contact-page {
+  background-color: #121212;
+}
+
+.page-header {
+  text-align: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: white;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 700;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 100px;
+}
+
+.contact-info {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  height: fit-content;
+}
+
+.dark-mode .contact-info {
+  background: #2a2a2a;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  position: relative;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 600;
+}
+
+.dark-mode .contact-info h2 {
+  color: #e0e0e0;
+}
+
+.contact-info h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #2196f3;
+  margin-top: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.dark-mode .contact-item {
+  border-bottom-color: #444;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #2196f3;
+  margin-top: 5px;
+}
+
+.contact-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 600;
+}
+
+.dark-mode .contact-item h3 {
+  color: #e0e0e0;
+}
+
+.contact-item p {
+  color: #666;
+  margin-bottom: 5px;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.dark-mode .contact-item p {
+  color: #aaa;
+}
+
+.contact-form-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .contact-form-section {
+  background: #2a2a2a;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  position: relative;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 600;
+}
+
+.dark-mode .contact-form-section h2 {
+  color: #e0e0e0;
+}
+
+.contact-form-section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #2196f3;
+  margin-top: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #2c3e50;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.dark-mode .form-group label {
+  color: #e0e0e0;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea {
+  background: #333;
+  border-color: #555;
+  color: #e0e0e0;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #2196f3 0%, #4caf50 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  align-self: flex-start;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-info,
+  .contact-form-section {
+    padding: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

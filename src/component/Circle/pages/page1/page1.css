@@ -1,0 +1,165 @@
+/* فونت زیبای فارسی */
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap");
+
+/* Reset و تنظیمات اولیه */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: "Vazirmatn", "Tahoma", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  direction: rtl;
+  transition: background-color 0.3s, color 0.3s;
+  line-height: 1.6;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Layout اصلی برای Page1 */
+.page1-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.dark-mode .page1-container {
+  background-color: #121212;
+}
+
+.page1-app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* محتوای اصلی Page1 */
+.page1-main-content {
+  flex: 1;
+  width: 100%;
+}
+
+.page1-content-wrapper {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+/* سبد خرید */
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cart-sidebar {
+  position: relative;
+  width: 350px;
+  height: 100vh;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+  animation: slideIn 0.3s forwards;
+}
+
+.dark-mode .cart-sidebar {
+  background: #2a2a2a;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.close-cart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.close-cart:hover {
+  color: #ff4757;
+}
+
+/* دکمه شناور سبد خرید */
+.floating-cart-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.floating-cart-btn:hover {
+  transform: scale(1.1);
+}
+
+.floating-cart-counter {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #ff4757;
+  color: white;
+  font-size: 0.8rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .cart-sidebar {
+    width: 100%;
+  }
+}

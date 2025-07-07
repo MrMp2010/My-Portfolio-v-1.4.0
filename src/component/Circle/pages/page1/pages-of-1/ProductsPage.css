@@ -1,0 +1,238 @@
+.products-page {
+  width: 100%;
+  padding: 20px 0 200px 0;
+}
+
+.dark-mode .products-page {
+  background-color: #121212;
+}
+
+.page-header {
+  text-align: center;
+  padding: 50px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: white;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 700;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.category-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 40px 0;
+}
+
+.category-btn {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 25px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+  font-family: "Vazirmatn", sans-serif;
+  font-size: 0.95rem;
+}
+
+.dark-mode .category-btn {
+  background: #2a2a2a;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  background: #2196f3;
+  color: white;
+  border-color: #2196f3;
+  transform: translateY(-2px);
+}
+
+.products-section {
+  margin: 50px 0 400px 0;
+  padding-bottom: 200px;
+}
+
+.products-header h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 1.8rem;
+  color: #2c3e50;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 600;
+}
+
+.dark-mode .products-header h2 {
+  color: #e0e0e0;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+  margin-bottom: 100px;
+}
+
+.no-products {
+  text-align: center;
+  padding: 100px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 200px;
+}
+
+.dark-mode .no-products {
+  background: #2a2a2a;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.no-products-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.no-products h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #2c3e50;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 600;
+}
+
+.dark-mode .no-products h3 {
+  color: #e0e0e0;
+}
+
+.no-products p {
+  color: #666;
+  font-size: 1rem;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.dark-mode .no-products p {
+  color: #aaa;
+}
+
+/* بخش اضافی برای طول بیشتر */
+.extra-products-content {
+  margin: 150px 0 200px 0;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 20px;
+}
+
+.dark-mode .extra-products-content {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+}
+
+.extra-products-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 600;
+}
+
+.dark-mode .extra-products-content h2 {
+  color: #e0e0e0;
+}
+
+.extra-products-content p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  line-height: 1.8;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.dark-mode .extra-products-content p {
+  color: #aaa;
+}
+
+.brands-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.brand-item {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.dark-mode .brand-item {
+  background: #333;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.brand-item:hover {
+  transform: translateY(-5px);
+}
+
+.brand-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.brand-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-family: "Vazirmatn", sans-serif;
+  font-weight: 600;
+}
+
+.dark-mode .brand-item h3 {
+  color: #e0e0e0;
+}
+
+.brand-item p {
+  color: #666;
+  font-size: 0.9rem;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.dark-mode .brand-item p {
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 18px;
+  }
+
+  .brands-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
